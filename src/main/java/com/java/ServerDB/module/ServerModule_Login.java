@@ -78,6 +78,9 @@ public class ServerModule_Login {
 
                 if (connection.isUser(id,pw)) {
                     osw.write("user ok");
+                }else if (!connection.isUser(id,pw))
+                {
+                    osw.write("wrong id or pw");
                 }
 
 
