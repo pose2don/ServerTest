@@ -11,7 +11,7 @@ public class DBConnection {
     public DBConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/boardcar", "root", "Sd357159!");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BoardCar", "user1", "1");
             st = con.createStatement();
             System.out.println("1");
         } catch (Exception e) {
